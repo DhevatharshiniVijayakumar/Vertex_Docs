@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed-variant": "#422bb5", "primary-fixed-dim": "#b2c7ee", "on-tertiary-fixed": "#170065", "on-secondary-fixed-variant": "#005048", "secondary-fixed-dim": "#50dbc8", "on-background": "#0c1d2e", "tertiary": "#130057", "inverse-primary": "#b2c7ee", "surface-variant": "#d3e4fc", "primary-fixed": "#d5e3ff", "surface-container-lowest": "#ffffff", "secondary-container": "#71f8e4", "surface-container-highest": "#d3e4fc", "surface-container-low": "#eef4ff", "on-secondary": "#ffffff", "surface-tint": "#4a5f81", "on-surface": "#0c1d2e", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "background": "#f8f9ff", "inverse-on-surface": "#e9f1ff", "on-primary-fixed-variant": "#324768", "outline-variant": "#c4c6ce", "error": "#ba1a1a", "on-primary-fixed": "#021c3a", "tertiary-container": "#25008f", "surface-container": "#e5efff", "secondary-fixed": "#71f8e4", "on-error-container": "#93000a", "on-primary-container": "#7d93b7", "outline": "#74777e", "on-secondary-fixed": "#00201c", "surface-bright": "#f8f9ff", "primary-container": "#142b4a", "secondary": "#006b5f", "error-container": "#ffdad6", "primary": "#001632", "on-error": "#ffffff", "tertiary-fixed": "#e4dfff", "surface-dim": "#cbdbf3", "inverse-surface": "#223244", "on-tertiary-container": "#8f81ff", "tertiary-fixed-dim": "#c7bfff", "on-secondary-container": "#007165", "surface-container-high": "#dbe9ff", "surface": "#f8f9ff", "on-surface-variant": "#44474e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "1.25rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-md": "0.75rem", "gutter": "0.75rem", "gutter-tablet": "1rem", "margin-tablet": "2rem", "margin-desktop": "3rem", "space-sm": "0.5rem", "space-xl": "1.5rem", "space-lg": "1rem" }, "fontFamily": { "body-sm": ["Noto Sans"], "headline-xl-mobile": ["Noto Sans"], "headline-lg-mobile": ["Noto Sans"], "label-sm": ["Noto Sans"], "label-lg": ["Noto Sans"], "body-md": ["Noto Sans"], "body-lg": ["Noto Sans"], "label-md": ["Noto Sans"], "headline-md": ["Noto Sans"], "headline-lg": ["Noto Sans"], "headline-xl": ["Noto Sans"] }, "fontSize": { "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-xl-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-lg-mobile": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "0", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; background-color: #f8f9ff; } body { -webkit-font-smoothing: antialiased; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style></head><body class="bg-surface font-body-md text-on-surface min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(20,43,74,0.04)] pt-safe"><div class="flex justify-between items-center px-margin h-6 text-on-surface-variant font-label-sm text-label-sm pt-1"><span class="font-label-md text-label-md font-semibold text-on-surface">9:41</span><div class="flex items-center gap-1.5 text-on-surface-variant"><span class="material-symbols-outlined text-[16px]">signal_cellular_4_bar</span><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[18px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Vertex Docs Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X633lAPwtdaZSEW9ZTpDTz0vcXdmNoSE-etSwCQ0I176-tjpgTE-VgemYA-fHsRCTc2cWbK_ZLKmtfUFD711wGfw-8MVrAbPeT0OYUxbokteKdk7x9BH59_PdVEoco9xn7jJ2ubFQIpVv9oVrmNuhU9qUzeyS7ZSh5mi2OhST2AGhW-V5akCH-M0LntZS2ImyRPTT2y_ioZaq1JFu3N_Ssg92cqPrV6umPxhcRd9Lc9zlmGz90dMxSQks"/><span class="font-headline-md text-headline-md font-bold text-primary-container tracking-tight">Vertex Docs</span></div><div class="flex items-center gap-space-md"><span class="font-label-lg text-label-lg text-on-surface-variant font-medium hidden sm:inline-block">Language Bridge</span><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-secondary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsbUiiLgrjfuawDmWM4NGTbIfcDCj4LZM4dhIeheGAqCKiqFW9SMpw6tjKN8OLC1op9Y7DuBruvQyrmSJtPSfmAycdSvxLLmhWSYxu7xagUKtaKLKfo5AFuoFD49kbfgoqr8NYQRTlmvWSz4bI1xQK9EBfmL8rEfh16LBNhtJTTvab-JMG1tvat6YBsRGp4lYw8WNmNTgzkb1Exh_RA1NbiDuN1MDG9oFHDkKxxhRYxfoVBOVFKe90"/></div></div></header><main class="flex-1 w-full bg-surface pt-20 pb-28"><div class="flex flex-col w-full">
+<!-- Content Container with Mobile Margins -->
+<div class="px-margin flex flex-col gap-space-lg">
+<!-- Page Title & Subtitle Section -->
+<section class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-secondary/10 text-secondary">
+<span class="material-symbols-outlined text-[18px]">translate</span>
+</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-semibold">Bilingual Sync Engine</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+          Engine Active
+        </span>
+</div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-primary-container tracking-tight">Language Bridge</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Translate documents while preserving your original files and spatial layout intact.</p>
+</section>
+<!-- Language Pair Selector Card -->
+<section class="rounded-xl bg-surface-container-lowest shadow-sm p-4 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-primary-container uppercase tracking-wider">Direction &amp; Locale</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+          Format Guard
+        </span>
+</div>
+<!-- Selector Pair Container with Swap Control -->
+<div class="relative flex items-center justify-between gap-space-xs">
+<!-- Source Language Box -->
+<div class="flex-1 bg-surface-container-low rounded-xl p-3 flex flex-col gap-1 transition-all" id="sourceLangCard">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Source / மூலம்</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-primary-container font-label-sm text-label-sm font-bold">TA</span>
+</div>
+<span class="font-headline-md text-headline-md font-bold text-primary-container tracking-tight" id="sourceLangText">Tamil</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">தமிழ் (Tamil Nadu)</span>
+</div>
+<!-- Swap Interactive Button (Circular navy #142b4a) -->
+<button aria-label="Swap source and target languages" class="z-10 flex items-center justify-center w-11 h-11 rounded-full bg-primary-container text-on-primary shadow-md active:scale-95 transition-transform" id="swapLangBtn" type="button">
+<span class="material-symbols-outlined text-[20px] transition-transform duration-300" id="swapIcon">sync_alt</span>
+</button>
+<!-- Target Language Box -->
+<div class="flex-1 bg-surface-container-low rounded-xl p-3 flex flex-col gap-1 transition-all" id="targetLangCard">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Target / இலக்கு</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-primary-container font-label-sm text-label-sm font-bold">EN</span>
+</div>
+<span class="font-headline-md text-headline-md font-bold text-primary-container tracking-tight" id="targetLangText">English</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">US Corporate</span>
+</div>
+</div>
+<!-- Quick Language Chips Row (Horizontally Scrollable) -->
+<div class="flex flex-col gap-1.5 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Quick Language Target</span>
+<div class="flex items-center gap-1.5 overflow-x-auto py-1 -mx-1 px-1 no-scrollbar">
+<button class="lang-chip flex-shrink-0 px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-medium transition-all" type="button">
+            Tamil (தமிழ்)
+          </button>
+<button class="lang-chip flex-shrink-0 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-medium hover:bg-surface-variant transition-all" type="button">
+            English (US)
+          </button>
+<button class="lang-chip flex-shrink-0 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-medium hover:bg-surface-variant transition-all" type="button">
+            Hindi (हिंदी)
+          </button>
+<button class="lang-chip flex-shrink-0 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-medium hover:bg-surface-variant transition-all" type="button">
+            Malayalam (മലയാളം)
+          </button>
+<button class="lang-chip flex-shrink-0 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-medium hover:bg-surface-variant transition-all" type="button">
+            Telugu (తెలుగు)
+          </button>
+<button class="lang-chip flex-shrink-0 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-medium hover:bg-surface-variant transition-all" type="button">
+            Kannada (ಕನ್ನಡ)
+          </button>
+<button class="lang-chip flex-shrink-0 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-medium hover:bg-surface-variant transition-all" type="button">
+            Sanskrit (संस्कृतम्)
+          </button>
+<button class="lang-chip flex-shrink-0 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-medium hover:bg-surface-variant transition-all" type="button">
+            French
+          </button>
+<button class="lang-chip flex-shrink-0 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-medium hover:bg-surface-variant transition-all" type="button">
+            German
+          </button>
+</div>
+</div>
+</section>
+<!-- Source Document Selection Card -->
+<section class="rounded-xl bg-surface-container-lowest shadow-sm p-4 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-primary-container uppercase tracking-wider">Active Document</span>
+<button class="font-label-md text-label-md font-semibold text-secondary hover:underline flex items-center gap-1 active:opacity-75" type="button">
+<span class="material-symbols-outlined text-[16px]">cached</span>
+          Change Document
+        </button>
+</div>
+<div class="flex items-start gap-space-sm bg-surface-container-low rounded-xl p-3">
+<!-- PDF File Icon Badge -->
+<div class="w-12 h-14 rounded-lg bg-primary-container text-on-primary flex flex-col items-center justify-center flex-shrink-0 shadow-sm relative overflow-hidden">
+<span class="material-symbols-outlined text-[24px]">description</span>
+<span class="font-label-sm text-label-sm font-bold tracking-tight uppercase text-secondary-container">PDF</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg font-bold text-primary-container truncate">Tamil_Legal_Affidavit.pdf</span>
+<span class="material-symbols-outlined text-secondary text-[16px] flex-shrink-0" title="Verified Format">verified</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-2 gap-y-0.5 mt-0.5 text-on-surface-variant font-label-sm text-label-sm">
+<span>1.4 MB</span>
+<span>•</span>
+<span>4 pages</span>
+<span>•</span>
+<span class="text-secondary font-medium">Tamil (99.8% match)</span>
+</div>
+<div class="mt-2 flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Layout Cloned
+            </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+              Non-destructive
+            </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Three-Step Bi-Directional Workflow Indicator -->
+<section class="rounded-xl bg-surface-container-lowest shadow-sm p-4 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-primary-container uppercase tracking-wider">Workflow Progression</span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Step 2 of 3</span>
+</div>
+<div class="flex items-start justify-between relative mt-1">
+<!-- Connecting Background Rail -->
+<div class="absolute top-4 left-6 right-6 h-0.5 bg-surface-container-highest -z-0"></div>
+<div class="absolute top-4 left-6 w-1/2 h-0.5 bg-secondary -z-0"></div>
+<!-- Step 1: Completed -->
+<div class="flex flex-col items-center gap-1.5 text-center flex-1 z-10">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary-container leading-tight">Choose Tamil Doc</span>
+<span class="font-label-sm text-label-sm text-secondary">Completed</span>
+</div>
+<!-- Step 2: Active Pulsing -->
+<div class="flex flex-col items-center gap-1.5 text-center flex-1 z-10">
+<div class="w-8 h-8 rounded-full bg-primary-container text-secondary flex items-center justify-center shadow-md relative">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span class="absolute -top-1 -right-1 w-3 h-3 rounded-full bg-secondary ring-2 ring-surface-container-lowest animate-ping"></span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary-container leading-tight">Review English Draft</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Active Session</span>
+</div>
+<!-- Step 3: Upcoming -->
+<div class="flex flex-col items-center gap-1.5 text-center flex-1 z-10 opacity-70">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+</div>
+<span class="font-label-sm text-label-sm font-medium text-on-surface-variant leading-tight">Generate Revised Tamil</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pending</span>
+</div>
+</div>
+</section>
+<!-- Side-by-Side Verification Preview Box (Unicode Tamil & English) -->
+<section class="rounded-xl bg-surface-container-lowest shadow-sm p-4 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-primary-container uppercase tracking-wider">Side-by-Side Verification</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">spellcheck</span>
+          Aligned Unicode
+        </span>
+</div>
+<div class="flex flex-col gap-2 bg-surface-container-low rounded-xl p-3">
+<!-- Tamil Original Snippet -->
+<div class="flex flex-col gap-1 pb-2 border-b-0">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">மூல ஆவணம் (Tamil Source)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Para 1, Ln 4</span>
+</div>
+<p class="font-body-md text-body-md text-primary-container leading-relaxed font-medium">
+            "தமிழ் ஆவண மொழிபெயர்ப்பு மற்றும் வடிவமைப்பு காப்பு — ஒப்பந்த விதிமுறைகள் மாறாமல் பாதுகாக்கப்படும்."
+          </p>
+</div>
+<!-- English Synchronized Mirror -->
+<div class="flex flex-col gap-1 pt-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-primary-container">English Mirror Draft</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Live Linked</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            "Tamil document translation and layout preservation — contract terms remain unaltered and legally secured."
+          </p>
+</div>
+</div>
+</section>
+<!-- Version Management & Multi-State Output Cards -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-md text-headline-md font-bold text-primary-container">Preserved Document Stack</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary-container font-label-sm text-label-sm font-semibold">3 Files</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Non-destructive</span>
+</div>
+<!-- Card A: Original Tamil Document -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm p-4 flex flex-col gap-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">article</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-bold text-primary-container truncate">Tamil_Legal_Affidavit.pdf</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Original Upload • 1.4 MB</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-primary-container font-label-sm text-label-sm font-bold flex-shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">lock</span>
+            Immutable Original
+          </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified_user</span>
+            Cryptographic SHA-256 Intact
+          </span>
+<div class="flex items-center gap-2">
+<button class="h-9 px-3 rounded-lg bg-surface-container hover:bg-surface-variant text-primary-container font-label-md text-label-md font-semibold flex items-center gap-1 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+              Preview
+            </button>
+<button aria-label="Download original document" class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-variant text-primary-container flex items-center justify-center active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card B: English Translated Draft (v1.2) - Active Review Focus -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm p-4 flex flex-col gap-3 relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary"></div>
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-secondary/15 text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">translate</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-bold text-primary-container truncate">English_Affidavit_Draft_v1.2.docx</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Edited 12m ago by Lead Attorney</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold flex-shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">edit_document</span>
+            Editable Draft
+          </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5">
+<!-- Collaborator indicator -->
+<div class="flex -space-x-1.5 overflow-hidden">
+<span class="inline-block h-6 w-6 rounded-full bg-primary-container text-on-primary text-[10px] font-bold flex items-center justify-center ring-2 ring-surface-container-lowest">JD</span>
+<span class="inline-block h-6 w-6 rounded-full bg-secondary text-on-secondary text-[10px] font-bold flex items-center justify-center ring-2 ring-surface-container-lowest">SK</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 reviewers online</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="h-9 px-3 rounded-lg bg-surface-container hover:bg-surface-variant text-primary-container font-label-md text-label-md font-semibold flex items-center gap-1 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+              Inspect
+            </button>
+<!-- CTA in #16B8A6 teal -->
+<button class="h-9 px-3.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-sm hover:opacity-95 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+              Open in Editor
+            </button>
+</div>
+</div>
+</div>
+<!-- Card C: Revised Tamil Document (v2.0) -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm p-4 flex flex-col gap-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">auto_fix_high</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-bold text-primary-container truncate">Tamil_Legal_Affidavit_v2.0.pdf</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Auto-regenerated from English edits</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary-container font-label-sm text-label-sm font-bold flex-shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-secondary">sync</span>
+            Synced with English
+          </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-secondary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">task_alt</span>
+            Ready for Sign-off (முடிந்தது)
+          </span>
+<div class="flex items-center gap-2">
+<button class="h-9 px-3 rounded-lg bg-surface-container hover:bg-surface-variant text-primary-container font-label-md text-label-md font-semibold flex items-center gap-1 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">compare</span>
+              Diff View
+            </button>
+<button aria-label="Download revised document" class="h-9 px-3 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center gap-1 shadow-sm active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+              Download
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Verification & Quality Trust Notice -->
+<section class="rounded-xl bg-surface-container-low p-3.5 flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px] flex-shrink-0 mt-0.5">shield_with_heart</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md font-bold text-primary-container">Enterprise Integrity Protocol</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Local Prototype Demo • Legal entity names, statutory dates &amp; numeric tables are permanently locked during translation with side-by-side verification guarantee.
+        </p>
+</div>
+</section>
+<!-- Primary Action Button Floating Block -->
+<section class="pt-space-xs pb-space-md flex flex-col gap-2">
+<button class="w-full h-12 rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-lg active:scale-[0.98] transition-all" id="translateActionBtn" type="button">
+<span class="material-symbols-outlined text-[20px] transition-transform duration-300 group-hover:rotate-180">auto_awesome</span>
+<span>Translate Document (மொழிபெயர்)</span>
+</button>
+<span class="font-label-sm text-label-sm text-center text-on-surface-variant">Preserves original signatures, stamps &amp; paragraph geometry</span>
+</section>
+</div>
+</div>
+<script>
+  (function initLanguageBridgeInteractions() {
+    const swapBtn = document.getElementById('swapLangBtn');
+    const swapIcon = document.getElementById('swapIcon');
+    const sourceCard = document.getElementById('sourceLangCard');
+    const targetCard = document.getElementById('targetLangCard');
+    const sourceText = document.getElementById('sourceLangText');
+    const targetText = document.getElementById('targetLangText');
+    const translateBtn = document.getElementById('translateActionBtn');
+    const langChips = document.querySelectorAll('.lang-chip');
+
+    let isSwapped = false;
+
+    // Interactive Language Swap Micro-interaction
+    if (swapBtn) {
+      swapBtn.addEventListener('click', () => {
+        isSwapped = !isSwapped;
+        
+        // Icon rotation delight
+        swapIcon.style.transform = isSwapped ? 'rotate(180deg)' : 'rotate(0deg)';
+        
+        // Smooth visual swap feedback
+        sourceCard.classList.add('scale-95');
+        targetCard.classList.add('scale-95');
+
+        setTimeout(() => {
+          if (isSwapped) {
+            sourceText.textContent = 'English';
+            targetText.textContent = 'Tamil';
+          } else {
+            sourceText.textContent = 'Tamil';
+            targetText.textContent = 'English';
+          }
+          sourceCard.classList.remove('scale-95');
+          targetCard.classList.remove('scale-95');
+        }, 150);
+      });
+    }
+
+    // Quick chip selectors
+    langChips.forEach((chip) => {
+      chip.addEventListener('click', () => {
+        langChips.forEach(c => {
+          c.classList.remove('bg-primary-container', 'text-on-primary');
+          c.classList.add('bg-surface-container', 'text-on-surface');
+        });
+        chip.classList.add('bg-primary-container', 'text-on-primary');
+        chip.classList.remove('bg-surface-container', 'text-on-surface');
+      });
+    });
+
+    // Translate Button Feedback
+    if (translateBtn) {
+      translateBtn.addEventListener('click', () => {
+        const originalContent = translateBtn.innerHTML;
+        translateBtn.innerHTML = `
+          <span class="material-symbols-outlined text-[20px] animate-spin">refresh</span>
+          <span>Preserving Layout & Synthesizing...</span>
+        `;
+        translateBtn.classList.add('opacity-90');
+        setTimeout(() => {
+          translateBtn.innerHTML = `
+            <span class="material-symbols-outlined text-[20px]">check_circle</span>
+            <span>Aligned & Ready in Stack!</span>
+          `;
+          setTimeout(() => {
+            translateBtn.innerHTML = originalContent;
+            translateBtn.classList.remove('opacity-90');
+          }, 2400);
+        }, 1200);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_16px_rgba(20,43,74,0.06)]" data-active-classes="text-primary-container font-semibold bg-secondary/15 rounded-xl"><div class="flex justify-between items-center h-[72px] px-gutter"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 px-space-xs text-on-surface-variant hover:text-on-surface transition-all" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 px-space-xs text-on-surface-variant hover:text-on-surface transition-all" data-path="files" href="#"><span class="material-symbols-outlined text-[24px]">folder</span><span class="font-label-sm text-label-sm mt-0.5">Files</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 px-space-xs text-on-surface-variant hover:text-on-surface transition-all" data-path="pdf-studio" href="#"><span class="material-symbols-outlined text-[24px]">description</span><span class="font-label-sm text-label-sm mt-0.5">PDF Studio</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 px-space-xs transition-all text-primary-container font-semibold bg-secondary/15 rounded-xl" data-path="language-bridge" href="#"><span class="material-symbols-outlined text-[24px]">translate</span><span class="font-label-sm text-label-sm mt-0.5">Language</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 px-space-xs text-on-surface-variant hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm mt-0.5">Profile</span></a></div></nav></body></html>

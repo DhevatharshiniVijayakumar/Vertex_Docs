@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed-variant": "#422bb5", "primary-fixed-dim": "#b2c7ee", "on-tertiary-fixed": "#170065", "on-secondary-fixed-variant": "#005048", "secondary-fixed-dim": "#50dbc8", "on-background": "#0c1d2e", "tertiary": "#130057", "inverse-primary": "#b2c7ee", "surface-variant": "#d3e4fc", "primary-fixed": "#d5e3ff", "surface-container-lowest": "#ffffff", "secondary-container": "#71f8e4", "surface-container-highest": "#d3e4fc", "surface-container-low": "#eef4ff", "on-secondary": "#ffffff", "surface-tint": "#4a5f81", "on-surface": "#0c1d2e", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "background": "#f8f9ff", "inverse-on-surface": "#e9f1ff", "on-primary-fixed-variant": "#324768", "outline-variant": "#c4c6ce", "error": "#ba1a1a", "on-primary-fixed": "#021c3a", "tertiary-container": "#25008f", "surface-container": "#e5efff", "secondary-fixed": "#71f8e4", "on-error-container": "#93000a", "on-primary-container": "#7d93b7", "outline": "#74777e", "on-secondary-fixed": "#00201c", "surface-bright": "#f8f9ff", "primary-container": "#142b4a", "secondary": "#006b5f", "error-container": "#ffdad6", "primary": "#001632", "on-error": "#ffffff", "tertiary-fixed": "#e4dfff", "surface-dim": "#cbdbf3", "inverse-surface": "#223244", "on-tertiary-container": "#8f81ff", "tertiary-fixed-dim": "#c7bfff", "on-secondary-container": "#007165", "surface-container-high": "#dbe9ff", "surface": "#f8f9ff", "on-surface-variant": "#44474e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "1.25rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-md": "0.75rem", "gutter": "0.75rem", "gutter-tablet": "1rem", "margin-tablet": "2rem", "margin-desktop": "3rem", "space-sm": "0.5rem", "space-xl": "1.5rem", "space-lg": "1rem" }, "fontFamily": { "body-sm": ["Noto Sans"], "headline-xl-mobile": ["Noto Sans"], "headline-lg-mobile": ["Noto Sans"], "label-sm": ["Noto Sans"], "label-lg": ["Noto Sans"], "body-md": ["Noto Sans"], "body-lg": ["Noto Sans"], "label-md": ["Noto Sans"], "headline-md": ["Noto Sans"], "headline-lg": ["Noto Sans"], "headline-xl": ["Noto Sans"] }, "fontSize": { "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-xl-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-lg-mobile": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "0", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; background-color: #f8f9ff; } body { -webkit-font-smoothing: antialiased; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style></head><body class="bg-surface font-body-md text-on-surface min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(20,43,74,0.04)] pt-safe"><div class="flex justify-between items-center px-margin h-6 text-on-surface-variant font-label-sm text-label-sm pt-1"><span class="font-label-md text-label-md font-semibold text-on-surface">9:41</span><div class="flex items-center gap-1.5 text-on-surface-variant"><span class="material-symbols-outlined text-[16px]">signal_cellular_4_bar</span><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[18px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Vertex Docs Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X633lAPwtdaZSEW9ZTpDTz0vcXdmNoSE-etSwCQ0I176-tjpgTE-VgemYA-fHsRCTc2cWbK_ZLKmtfUFD711wGfw-8MVrAbPeT0OYUxbokteKdk7x9BH59_PdVEoco9xn7jJ2ubFQIpVv9oVrmNuhU9qUzeyS7ZSh5mi2OhST2AGhW-V5akCH-M0LntZS2ImyRPTT2y_ioZaq1JFu3N_Ssg92cqPrV6umPxhcRd9Lc9zlmGz90dMxSQks"/><span class="font-headline-md text-headline-md font-bold text-primary-container tracking-tight">Vertex Docs</span></div><div class="flex items-center gap-space-md"><span class="font-label-lg text-label-lg text-on-surface-variant font-medium hidden sm:inline-block">Files</span><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-secondary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsbUiiLgrjfuawDmWM4NGTbIfcDCj4LZM4dhIeheGAqCKiqFW9SMpw6tjKN8OLC1op9Y7DuBruvQyrmSJtPSfmAycdSvxLLmhWSYxu7xagUKtaKLKfo5AFuoFD49kbfgoqr8NYQRTlmvWSz4bI1xQK9EBfmL8rEfh16LBNhtJTTvab-JMG1tvat6YBsRGp4lYw8WNmNTgzkb1Exh_RA1NbiDuN1MDG9oFHDkKxxhRYxfoVBOVFKe90"/></div></div></header><main class="flex-1 w-full bg-surface pt-20 pb-28"><div class="flex flex-col w-full relative">
+<!-- Interactive Action Sheet / Bottom Drawer (Context Menu) -->
+<div class="fixed inset-0 z-50 pointer-events-none opacity-0 transition-opacity duration-300 flex items-end" id="file-action-sheet">
+<div class="absolute inset-0 bg-primary/40 backdrop-blur-sm transition-opacity" id="sheet-backdrop"></div>
+<div class="relative w-full bg-surface-container-lowest rounded-t-[28px] p-margin shadow-2xl transform translate-y-full transition-transform duration-300 pb-safe z-10 flex flex-col gap-space-md" id="sheet-panel">
+<div class="w-10 h-1.5 bg-outline-variant/60 rounded-full mx-auto mb-space-xs"></div>
+<div class="flex items-center gap-space-md pb-space-sm">
+<div class="w-12 h-12 rounded-xl bg-error-container text-error flex items-center justify-center font-bold text-headline-md" id="sheet-file-icon">
+<span class="material-symbols-outlined text-[26px]">picture_as_pdf</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-headline-md text-headline-md text-on-surface truncate" id="sheet-file-name">Project_Proposal.pdf</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant" id="sheet-file-meta">2.4 MB • Modified Today 10:45 AM</p>
+</div>
+<button aria-label="Close menu" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" id="close-sheet-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="grid grid-cols-4 gap-space-sm pt-space-xs text-center">
+<button class="flex flex-col items-center gap-1.5 p-space-sm rounded-xl hover:bg-surface-container-low transition-colors group">
+<div class="w-11 h-11 rounded-full bg-secondary-container/50 text-secondary flex items-center justify-center group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">share</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface">Share</span>
+</button>
+<button class="flex flex-col items-center gap-1.5 p-space-sm rounded-xl hover:bg-surface-container-low transition-colors group">
+<div class="w-11 h-11 rounded-full bg-surface-container text-primary-container flex items-center justify-center group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">download</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface">Download</span>
+</button>
+<button class="flex flex-col items-center gap-1.5 p-space-sm rounded-xl hover:bg-surface-container-low transition-colors group">
+<div class="w-11 h-11 rounded-full bg-surface-container text-primary-container flex items-center justify-center group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">edit</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface">Rename</span>
+</button>
+<button class="flex flex-col items-center gap-1.5 p-space-sm rounded-xl hover:bg-surface-container-low transition-colors group">
+<div class="w-11 h-11 rounded-full bg-error-container/60 text-error flex items-center justify-center group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">delete</span>
+</div>
+<span class="font-label-sm text-label-sm text-error">Delete</span>
+</button>
+</div>
+<div class="flex flex-col gap-1 pt-space-xs">
+<button class="w-full flex items-center gap-space-md px-space-md py-3 rounded-xl hover:bg-surface-container text-left transition-colors">
+<span class="material-symbols-outlined text-secondary text-[22px]">translate</span>
+<div class="flex-1 min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface block">Translate with Vertex AI</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Instant bilingual rendering (English ⇄ தமிழ்)</span>
+</div>
+<span class="bg-secondary/15 text-secondary font-label-sm text-label-sm px-2 py-0.5 rounded-full">AI Fast</span>
+</button>
+<button class="w-full flex items-center gap-space-md px-space-md py-3 rounded-xl hover:bg-surface-container text-left transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant text-[22px]">drive_file_move</span>
+<span class="font-label-lg text-label-lg text-on-surface flex-1">Move to Folder</span>
+</button>
+<button class="w-full flex items-center gap-space-md px-space-md py-3 rounded-xl hover:bg-surface-container text-left transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant text-[22px]">star</span>
+<span class="font-label-lg text-label-lg text-on-surface flex-1">Add to Favorites</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Header Bar -->
+<div class="px-margin flex flex-col gap-1 pb-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile font-bold text-primary-container tracking-tight">My Files</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5 flex items-center gap-1.5">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+<span id="file-count-label">24 items • 1.8 GB stored</span>
+</p>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container p-1 rounded-xl shadow-sm">
+<button aria-label="List view" class="w-9 h-9 rounded-lg flex items-center justify-center bg-surface-container-lowest text-primary-container shadow-sm transition-all" id="view-list-btn">
+<span class="material-symbols-outlined text-[20px]">format_list_bulleted</span>
+</button>
+<button aria-label="Grid view" class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-all" id="view-grid-btn">
+<span class="material-symbols-outlined text-[20px]">grid_view</span>
+</button>
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-all" id="sort-order-btn" title="Sort by Date">
+<span class="material-symbols-outlined text-[20px]">swap_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Search & Filter Bar -->
+<div class="px-margin flex flex-col gap-space-sm mb-space-lg">
+<!-- Search Input -->
+<div class="relative w-full flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[20px] pointer-events-none">search</span>
+<input class="w-full h-12 pl-11 pr-11 bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary/40 transition-all" id="search-input" placeholder="Search files, folders, tags..." type="text"/>
+<button aria-label="Clear search" class="hidden absolute right-3 w-6 h-6 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center hover:text-on-surface transition-colors" id="clear-search-btn">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<!-- Filter Chips (Horizontal Scrollable) -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 -mx-margin px-margin">
+<button class="filter-chip active shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md font-medium transition-all flex items-center gap-1.5 bg-primary-container text-on-primary shadow-sm" data-category="all">
+<span>All Files</span>
+</button>
+<button class="filter-chip shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md font-medium transition-all flex items-center gap-1.5 bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-category="pdf">
+<span>PDFs</span>
+<span class="px-1.5 py-0.2 bg-surface-container-highest text-primary-container rounded-full text-[11px] font-semibold">14</span>
+</button>
+<button class="filter-chip shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md font-medium transition-all flex items-center gap-1.5 bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-category="doc">
+<span>Documents</span>
+<span class="px-1.5 py-0.2 bg-surface-container-highest text-primary-container rounded-full text-[11px] font-semibold">6</span>
+</button>
+<button class="filter-chip shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md font-medium transition-all flex items-center gap-1.5 bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-category="sheet">
+<span>Spreadsheets</span>
+<span class="px-1.5 py-0.2 bg-surface-container-highest text-primary-container rounded-full text-[11px] font-semibold">4</span>
+</button>
+<button class="filter-chip shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md font-medium transition-all flex items-center gap-1 bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-category="favorites">
+<span class="material-symbols-outlined text-[15px] text-amber-500 fill-current">star</span>
+<span>Favorites</span>
+</button>
+</div>
+</div>
+<!-- Folders Section -->
+<section class="px-margin mb-space-xl">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-headline-md font-semibold text-primary-container">Folders</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium">3</span>
+</div>
+<button class="font-label-sm text-label-sm text-secondary font-semibold flex items-center hover:opacity-80 transition-opacity">
+<span>View all</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- 3-column / Swipeable Row -->
+<div class="grid grid-cols-3 gap-space-sm">
+<!-- Folder 1: Engineering Docs -->
+<div class="bg-surface-container-lowest p-3 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow cursor-pointer min-h-[110px]">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-secondary flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-[22px]">folder</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[18px]">more_vert</span>
+</div>
+<div>
+<p class="font-label-md text-label-md font-semibold text-primary-container truncate">Engineering</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">8 files</p>
+</div>
+</div>
+<!-- Folder 2: Tamil Translations -->
+<div class="bg-surface-container-lowest p-3 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow cursor-pointer min-h-[110px] relative overflow-hidden">
+<div class="absolute -right-3 -top-3 w-10 h-10 rounded-full bg-secondary/10 flex items-end justify-start p-1 pointer-events-none">
+<span class="text-[10px] font-bold text-secondary">மொழி</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed text-on-secondary-fixed-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">translate</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[18px]">more_vert</span>
+</div>
+<div>
+<div class="flex items-center gap-1">
+<p class="font-label-md text-label-md font-semibold text-primary-container truncate">Tamil Transl.</p>
+</div>
+<div class="flex items-center justify-between">
+<p class="font-label-sm text-label-sm text-on-surface-variant">5 files</p>
+<span class="font-label-sm text-[10px] bg-secondary/15 text-secondary px-1.5 py-0.2 rounded font-medium">தமிழ்</span>
+</div>
+</div>
+</div>
+<!-- Folder 3: Financial Reports -->
+<div class="bg-surface-container-lowest p-3 rounded-2xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow cursor-pointer min-h-[110px]">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-xl bg-surface-container text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">folder_special</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[18px]">more_vert</span>
+</div>
+<div>
+<p class="font-label-md text-label-md font-semibold text-primary-container truncate">Financials</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">11 files</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Documents List / Grid Container -->
+<section class="px-margin flex flex-col gap-space-sm">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md font-semibold text-primary-container">All Documents</h2>
+</div>
+<button class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-colors" id="sort-toggle-text">
+<span>Recent first</span>
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+</button>
+</div>
+<!-- Active Documents Collection -->
+<div class="flex flex-col gap-space-sm transition-all" id="file-items-container">
+<!-- Item 1: Project_Proposal.pdf -->
+<div class="file-item bg-surface-container-lowest p-3.5 rounded-2xl shadow-sm flex items-center justify-between gap-space-md hover:shadow-md transition-all cursor-pointer" data-color="error" data-fav="true" data-icon="picture_as_pdf" data-modified="Today 10:45 AM" data-name="Project_Proposal.pdf" data-size="2.4 MB" data-type="pdf">
+<div class="flex items-center gap-space-md min-w-0 flex-1">
+<div class="w-11 h-11 rounded-xl bg-error-container/60 text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">picture_as_pdf</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<p class="font-label-lg text-label-lg font-semibold text-primary-container truncate file-title">Project_Proposal.pdf</p>
+<span class="material-symbols-outlined text-amber-500 text-[15px] shrink-0" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span>2.4 MB</span>
+<span>•</span>
+<span class="text-secondary font-medium">Today 10:45 AM</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button aria-label="Options" class="more-options-btn w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Tamil_Contract_Agreement.pdf -->
+<div class="file-item bg-surface-container-lowest p-3.5 rounded-2xl shadow-sm flex items-center justify-between gap-space-md hover:shadow-md transition-all cursor-pointer" data-color="secondary" data-fav="false" data-icon="g_translate" data-modified="Yesterday" data-name="Tamil_Contract_Agreement.pdf" data-size="1.8 MB" data-type="pdf">
+<div class="flex items-center gap-space-md min-w-0 flex-1">
+<div class="w-11 h-11 rounded-xl bg-secondary-fixed text-on-secondary-fixed-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">g_translate</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<p class="font-label-lg text-label-lg font-semibold text-primary-container truncate file-title">Tamil_Contract_Agreement.pdf</p>
+</div>
+<div class="flex items-center flex-wrap gap-2 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span>1.8 MB</span>
+<span>•</span>
+<span>Yesterday</span>
+<span class="bg-secondary/15 text-secondary font-label-sm text-[11px] px-2 py-0.2 rounded-full font-semibold">தமிழ் + ENG</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button aria-label="Options" class="more-options-btn w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Q3_Product_Roadmap.docx -->
+<div class="file-item bg-surface-container-lowest p-3.5 rounded-2xl shadow-sm flex items-center justify-between gap-space-md hover:shadow-md transition-all cursor-pointer" data-color="primary-container" data-fav="false" data-icon="article" data-modified="Oct 24" data-name="Q3_Product_Roadmap.docx" data-size="940 KB" data-type="doc">
+<div class="flex items-center gap-space-md min-w-0 flex-1">
+<div class="w-11 h-11 rounded-xl bg-surface-container-high text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">article</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<p class="font-label-lg text-label-lg font-semibold text-primary-container truncate file-title">Q3_Product_Roadmap.docx</p>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span>940 KB</span>
+<span>•</span>
+<span>Oct 24, 2024</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-[11px] px-1.5 py-0.2 rounded">DOCX</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button aria-label="Options" class="more-options-btn w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Item 4: JM_Vertex_Quarterly_Financials.xlsx -->
+<div class="file-item bg-surface-container-lowest p-3.5 rounded-2xl shadow-sm flex items-center justify-between gap-space-md hover:shadow-md transition-all cursor-pointer" data-color="secondary" data-fav="false" data-icon="table_chart" data-modified="Oct 18" data-name="JM_Vertex_Quarterly_Financials.xlsx" data-size="3.1 MB" data-type="sheet">
+<div class="flex items-center gap-space-md min-w-0 flex-1">
+<div class="w-11 h-11 rounded-xl bg-secondary-container/40 text-on-secondary-fixed-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">table_chart</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<p class="font-label-lg text-label-lg font-semibold text-primary-container truncate file-title">JM_Vertex_Quarterly_Financials.xlsx</p>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span>3.1 MB</span>
+<span>•</span>
+<span>Oct 18, 2024</span>
+<span class="bg-secondary/10 text-secondary font-label-sm text-[11px] px-1.5 py-0.2 rounded font-semibold">SHEET</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button aria-label="Options" class="more-options-btn w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Item 5: Tamil_Literature_Notes.pdf -->
+<div class="file-item bg-surface-container-lowest p-3.5 rounded-2xl shadow-sm flex items-center justify-between gap-space-md hover:shadow-md transition-all cursor-pointer" data-color="error" data-fav="false" data-icon="picture_as_pdf" data-modified="Oct 12" data-name="Tamil_Literature_Notes.pdf" data-size="4.2 MB" data-type="pdf">
+<div class="flex items-center gap-space-md min-w-0 flex-1">
+<div class="w-11 h-11 rounded-xl bg-error-container/60 text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">picture_as_pdf</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<p class="font-label-lg text-label-lg font-semibold text-primary-container truncate file-title">Tamil_Literature_Notes.pdf</p>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span>4.2 MB</span>
+<span>•</span>
+<span>Oct 12, 2024</span>
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-[11px] px-1.5 py-0.2 rounded">தமிழ் வடிவம்</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button aria-label="Options" class="more-options-btn w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Empty State (Hidden by default, shown when filters match nothing) -->
+<div class="hidden flex-col items-center justify-center py-12 px-margin text-center" id="empty-state">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant mb-space-sm">
+<span class="material-symbols-outlined text-[32px]">folder_off</span>
+</div>
+<p class="font-headline-md text-headline-md font-semibold text-primary-container">No matching documents</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-[240px]">We couldn't find anything matching your search query. Try another keyword or reset filters.</p>
+<button class="mt-space-md px-4 py-2 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md font-medium shadow-sm hover:opacity-90" id="reset-search-btn">
+        Clear Filter
+      </button>
+</div>
+</section>
+<!-- Floating Action Button (FAB) -->
+<div class="fixed right-5 bottom-24 z-40">
+<button aria-label="Add file or folder" class="w-14 h-14 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-[0_8px_24px_rgba(22,184,166,0.38)] active:scale-95 hover:scale-105 transition-all duration-200 focus:outline-none" id="add-fab-btn">
+<span class="material-symbols-outlined text-[28px]">add</span>
+</button>
+</div>
+<!-- Interactive Client-side Script -->
+<script>
+    (function initFileManager() {
+      const searchInput = document.getElementById('search-input');
+      const clearBtn = document.getElementById('clear-search-btn');
+      const resetSearchBtn = document.getElementById('reset-search-btn');
+      const fileContainer = document.getElementById('file-items-container');
+      const emptyState = document.getElementById('empty-state');
+      const filterChips = document.querySelectorAll('.filter-chip');
+      const viewListBtn = document.getElementById('view-list-btn');
+      const viewGridBtn = document.getElementById('view-grid-btn');
+      const sortOrderBtn = document.getElementById('sort-order-btn');
+      const sortToggleText = document.getElementById('sort-toggle-text');
+      
+      // Modal Sheet elements
+      const sheet = document.getElementById('file-action-sheet');
+      const sheetBackdrop = document.getElementById('sheet-backdrop');
+      const sheetPanel = document.getElementById('sheet-panel');
+      const closeSheetBtn = document.getElementById('close-sheet-btn');
+      const sheetFileName = document.getElementById('sheet-file-name');
+      const sheetFileMeta = document.getElementById('sheet-file-meta');
+      const sheetFileIcon = document.getElementById('sheet-file-icon');
+
+      let currentFilter = 'all';
+      let isAscending = false;
+
+      // Filtering logic
+      function updateVisibility() {
+        const query = searchInput.value.toLowerCase().trim();
+        const items = document.querySelectorAll('.file-item');
+        let visibleCount = 0;
+
+        items.forEach(item => {
+          const name = item.getAttribute('data-name').toLowerCase();
+          const type = item.getAttribute('data-type');
+          const isFav = item.getAttribute('data-fav') === 'true';
+
+          const matchesQuery = name.includes(query);
+          let matchesCategory = false;
+
+          if (currentFilter === 'all') {
+            matchesCategory = true;
+          } else if (currentFilter === 'favorites') {
+            matchesCategory = isFav;
+          } else {
+            matchesCategory = (type === currentFilter);
+          }
+
+          if (matchesQuery && matchesCategory) {
+            item.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+
+        if (visibleCount === 0) {
+          emptyState.classList.remove('hidden');
+          emptyState.classList.add('flex');
+        } else {
+          emptyState.classList.add('hidden');
+          emptyState.classList.remove('flex');
+        }
+      }
+
+      // Search Inputs
+      searchInput.addEventListener('input', () => {
+        if (searchInput.value.length > 0) {
+          clearBtn.classList.remove('hidden');
+        } else {
+          clearBtn.classList.add('hidden');
+        }
+        updateVisibility();
+      });
+
+      clearBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        clearBtn.classList.add('hidden');
+        updateVisibility();
+      });
+
+      if (resetSearchBtn) {
+        resetSearchBtn.addEventListener('click', () => {
+          searchInput.value = '';
+          clearBtn.classList.add('hidden');
+          currentFilter = 'all';
+          filterChips.forEach(c => {
+            c.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+            c.classList.add('bg-surface-container', 'text-on-surface-variant');
+          });
+          filterChips[0].classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+          filterChips[0].classList.remove('bg-surface-container', 'text-on-surface-variant');
+          updateVisibility();
+        });
+      }
+
+      // Filter chips
+      filterChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          filterChips.forEach(c => {
+            c.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+            c.classList.add('bg-surface-container', 'text-on-surface-variant');
+          });
+          chip.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+          chip.classList.remove('bg-surface-container', 'text-on-surface-variant');
+          currentFilter = chip.getAttribute('data-category');
+          updateVisibility();
+        });
+      });
+
+      // Grid / List toggle
+      viewGridBtn.addEventListener('click', () => {
+        viewGridBtn.classList.add('bg-surface-container-lowest', 'text-primary-container', 'shadow-sm');
+        viewGridBtn.classList.remove('text-on-surface-variant');
+        viewListBtn.classList.remove('bg-surface-container-lowest', 'text-primary-container', 'shadow-sm');
+        viewListBtn.classList.add('text-on-surface-variant');
+
+        fileContainer.classList.remove('flex-col');
+        fileContainer.classList.add('grid', 'grid-cols-2');
+
+        document.querySelectorAll('.file-item').forEach(item => {
+          item.classList.remove('items-center');
+          item.classList.add('flex-col', 'items-start', 'text-left');
+        });
+      });
+
+      viewListBtn.addEventListener('click', () => {
+        viewListBtn.classList.add('bg-surface-container-lowest', 'text-primary-container', 'shadow-sm');
+        viewListBtn.classList.remove('text-on-surface-variant');
+        viewGridBtn.classList.remove('bg-surface-container-lowest', 'text-primary-container', 'shadow-sm');
+        viewGridBtn.classList.add('text-on-surface-variant');
+
+        fileContainer.classList.add('flex-col');
+        fileContainer.classList.remove('grid', 'grid-cols-2');
+
+        document.querySelectorAll('.file-item').forEach(item => {
+          item.classList.add('items-center');
+          item.classList.remove('flex-col', 'items-start');
+        });
+      });
+
+      // Sort Toggle simulation
+      function toggleSort() {
+        isAscending = !isAscending;
+        const icon = sortToggleText.querySelector('.material-symbols-outlined');
+        const textSpan = sortToggleText.querySelector('span:first-child');
+        if (isAscending) {
+          icon.textContent = 'arrow_upward';
+          textSpan.textContent = 'Oldest first';
+        } else {
+          icon.textContent = 'arrow_downward';
+          textSpan.textContent = 'Recent first';
+        }
+
+        const items = Array.from(document.querySelectorAll('.file-item'));
+        items.reverse().forEach(el => fileContainer.appendChild(el));
+      }
+
+      sortOrderBtn.addEventListener('click', toggleSort);
+      sortToggleText.addEventListener('click', toggleSort);
+
+      // Context Drawer Menu logic
+      function openSheet(item) {
+        const name = item.getAttribute('data-name');
+        const meta = `${item.getAttribute('data-size')} • Modified ${item.getAttribute('data-modified')}`;
+        const icon = item.getAttribute('data-icon') || 'description';
+
+        sheetFileName.textContent = name;
+        sheetFileMeta.textContent = meta;
+        sheetFileIcon.querySelector('.material-symbols-outlined').textContent = icon;
+
+        sheet.classList.remove('pointer-events-none', 'opacity-0');
+        sheet.classList.add('opacity-100');
+        sheetPanel.classList.remove('translate-y-full');
+      }
+
+      function closeSheet() {
+        sheetPanel.classList.add('translate-y-full');
+        sheet.classList.add('opacity-0');
+        setTimeout(() => {
+          sheet.classList.add('pointer-events-none');
+        }, 300);
+      }
+
+      document.querySelectorAll('.more-options-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const parentItem = btn.closest('.file-item');
+          if (parentItem) openSheet(parentItem);
+        });
+      });
+
+      sheetBackdrop.addEventListener('click', closeSheet);
+      closeSheetBtn.addEventListener('click', closeSheet);
+
+      // FAB Micro-interaction
+      const fab = document.getElementById('add-fab-btn');
+      fab.addEventListener('click', () => {
+        fab.classList.add('rotate-45');
+        setTimeout(() => {
+          fab.classList.remove('rotate-45');
+        }, 300);
+      });
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_16px_rgba(20,43,74,0.06)]" data-active-classes="text-primary-container font-semibold bg-secondary/15 rounded-xl"><div class="flex justify-between items-center h-[72px] px-gutter"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 px-space-xs text-on-surface-variant hover:text-on-surface transition-all" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 px-space-xs transition-all text-primary-container font-semibold bg-secondary/15 rounded-xl" data-path="files" href="#"><span class="material-symbols-outlined text-[24px]">folder</span><span class="font-label-sm text-label-sm mt-0.5">Files</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 px-space-xs text-on-surface-variant hover:text-on-surface transition-all" data-path="pdf-studio" href="#"><span class="material-symbols-outlined text-[24px]">description</span><span class="font-label-sm text-label-sm mt-0.5">PDF Studio</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 px-space-xs text-on-surface-variant hover:text-on-surface transition-all" data-path="language-bridge" href="#"><span class="material-symbols-outlined text-[24px]">translate</span><span class="font-label-sm text-label-sm mt-0.5">Language</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 px-space-xs text-on-surface-variant hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm mt-0.5">Profile</span></a></div></nav></body></html>
