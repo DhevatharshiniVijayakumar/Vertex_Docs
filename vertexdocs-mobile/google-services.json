@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "486434741433",
+    "project_id": "vertex-docs-d03d9",
+    "storage_bucket": "vertex-docs-d03d9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486434741433:android:a6f0a05ef5370754260f68",
+        "android_client_info": {
+          "package_name": "com.vertexdocs.mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKsmk2U6F4XrbUSIcX8ywhhlvEMZr1YYg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
